@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-fisf
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-gkgn-tenant/test-app-etsh/devfile-sample-python-basic-fisf@sha256:1ac88cf8d27493b212653dc090eef63099b5965502e380b445a8241702a1d943
         name: my-python
         ports:
         - containerPort: 8081
