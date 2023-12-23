@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-fisf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-gkgn-tenant/test-app-etsh/devfile-sample-python-basic-fisf@sha256:1ac88cf8d27493b212653dc090eef63099b5965502e380b445a8241702a1d943
+        name: my-python
+        resources: {}
+status: {}
